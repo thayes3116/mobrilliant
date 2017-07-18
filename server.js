@@ -27,6 +27,6 @@ app.listen(port, function() {
 
 app.get("/", function(req, res) {
 	console.log("home page");
-	res.render("index");
+	res.render("index", {title: "Home Page"});
 })
 
